@@ -1,4 +1,4 @@
-.PHONY: install build package-install brain-games.PHONY: install brain-games
+.PHONY: install build package-install brain-games
 
 install:
 	uv sync
@@ -11,3 +11,6 @@ package-install:
 
 brain-games:
 	uv run brain-games
+
+lint:
+	uv run ruff check brain_games
