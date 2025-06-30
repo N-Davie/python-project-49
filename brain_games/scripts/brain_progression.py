@@ -9,6 +9,8 @@ def main():
     print(f"Hello, {name}!")
     print("What number is missing in the progression?")
 
+    correct_answers_in_row = 0
+
     for _ in range(3):
         length = random.randint(5, 10)
         start = random.randint(1, 100)
@@ -25,12 +27,16 @@ def main():
 
         if user_answer == correct_answer:
             print("Correct!")
-            # Продолжаем к следующему вопросу
-            continue
+            correct_answers_in_row += 1
+            if correct_answers_in_row == 3:
+                print(f"Congratulations, {name}!")
+                break
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
+    else:
+        print(f"Congratulations, {name}!")
 
 if __name__ == "__main__":
     main()
