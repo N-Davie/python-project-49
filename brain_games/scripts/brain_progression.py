@@ -1,7 +1,9 @@
 import random
 
+
 def create_progression(start, step, length):
     return [start + i * step for i in range(length)]
+
 
 def main():
     print("Welcome to the Brain Games!")
@@ -32,11 +34,15 @@ def main():
                 print(f"Congratulations, {name}!")
                 break
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
     else:
         print(f"Congratulations, {name}!")
 
+
 if __name__ == "__main__":
     main()
+

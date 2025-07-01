@@ -1,9 +1,11 @@
 import random
 
+
 def gcd(a, b):
     while b:
         a, b = b, a % b
     return a
+
 
 def main():
     print("Welcome to the Brain Games!")
@@ -22,11 +24,16 @@ def main():
         if user_answer == correct_answer:
             print("Correct!")
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(."
+                f"Correct answer was '{correct_answer}'."
+                )
             print(f"Let's try again, {name}!")
             return
 
     print(f"Congratulations, {name}!")
 
+
 if __name__ == "__main__":
     main()
+

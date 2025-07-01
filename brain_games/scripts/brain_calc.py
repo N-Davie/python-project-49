@@ -1,6 +1,7 @@
 import random
 import operator
 
+
 def get_question_and_answer():
     operations = {
         '+': operator.add,
@@ -13,6 +14,7 @@ def get_question_and_answer():
     question = f"{num1} {op_symbol} {num2}"
     answer = str(operation(num1, num2))
     return question, answer
+
 
 def main():
     print("Welcome to the Brain Games!")
@@ -28,10 +30,15 @@ def main():
         if user_answer == correct_answer:
             print("Correct!")
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+                )
             print(f"Let's try again, {NAME}!")
             return
     print(f"Congratulations, {NAME}!")
 
+
 if __name__ == "__main__":
     main()
+
