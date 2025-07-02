@@ -12,7 +12,7 @@ def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(3):
-        number = random.randint(1, 100) #NOSONAR
+        number = random.randint(1, 100) # NOSONAR
         print(f"Question: {number}")
         answer = input("Your answer: ").strip().lower()
 

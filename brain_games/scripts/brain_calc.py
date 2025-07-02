@@ -8,9 +8,9 @@ def get_question_and_answer():
         '-': operator.sub,
         '*': operator.mul,
     }
-    num1 = random.randint(1, 50)  #NOSONAR
-    num2 = random.randint(1, 50)  #NOSONAR
-    op_symbol, operation = random.choice(list(operations.items())) #NOSONAR
+    num1 = random.randint(1, 50)  # NOSONAR
+    num2 = random.randint(1, 50)  # NOSONAR
+    op_symbol, operation = random.choice(list(operations.items())) # NOSONAR
     question = f"{num1} {op_symbol} {num2}"
     answer = str(operation(num1, num2))
     return question, answer

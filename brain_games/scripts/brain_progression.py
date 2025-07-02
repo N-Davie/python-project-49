@@ -14,12 +14,12 @@ def main():
     correct_answers_in_row = 0
 
     for _ in range(3):
-        length = random.randint(5, 10) #NOSONAR
-        start = random.randint(1, 100) #NOSONAR
-        step = random.randint(1, 25) #NOSONAR
+        length = random.randint(5, 10) # NOSONAR
+        start = random.randint(1, 100) # NOSONAR
+        step = random.randint(1, 25) # NOSONAR
 
         progression = create_progression(start, step, length)
-        index_empty = random.randint(0, length - 1) #NOSONAR
+        index_empty = random.randint(0, length - 1) # NOSONAR
         correct_answer = str(progression[index_empty])
 
         progression_display = progression.copy()
