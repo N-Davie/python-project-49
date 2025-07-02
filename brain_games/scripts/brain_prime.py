@@ -18,7 +18,7 @@ def main():
 
     number_of_questions = 3
     for _ in range(number_of_questions):
-        number = random.randint(1, 100) # NOSONAR
+        number = random.randint(1, 100)  # NOSONAR
         correct_answer = "yes" if is_prime(number) else "no"
         print(f"\nQuestion: {number}")
         user_answer = input("Your answer: ").strip().lower()
